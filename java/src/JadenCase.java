@@ -31,7 +31,7 @@ public class JadenCase {
         System.out.println(toJadenCase(a));
     }
 }
-// Other way to do this problem
+// Other way to solve this problem
 
 //        public static String toJadenCase(String phrase) {
 //            if (null == phrase || phrase.length() == 0) {
