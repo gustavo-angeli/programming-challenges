@@ -12,14 +12,10 @@ public class PalindromeNumber {
         }
         long y = Long.valueOf(String.valueOf(reverseNumber));
 
-        if (x != y) {
-            return false;
-        }
-
-        return true;
+        return x == y;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(isPalindrome(1234567899));
     }
 

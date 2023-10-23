@@ -3,7 +3,7 @@ public class NumberToString {
         return String.valueOf(num);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(numberToString(123));
     }
 }

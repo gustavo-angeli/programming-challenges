@@ -4,12 +4,10 @@ public class SquareNumbers {
         Double root = Math.sqrt(n);
         root = Math.floor(root);
 
-        if (root * root != n) return false;
-
-        return true;
+        return root * root == n;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(isSquare(22323866));
     }
 }

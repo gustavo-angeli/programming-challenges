@@ -1,22 +1,18 @@
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
 
 public class RemoveElement {
     public static int removeElement(int[] nums, int val) {
-        List<String> arr = Arrays.stream(nums)
-                .mapToObj(i -> String.valueOf(i))
-                .collect(Collectors.toList());
-
-        while (arr.contains(String.valueOf(val))) {
-            arr.remove(String.valueOf(val));
+        System.out.println(nums[nums.length - 1] * nums[nums.length - 1]);
+        ArrayList list = new ArrayList();
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != val) {
+                list.add(nums[i]);
+            }
         }
-
-        return arr.size();
+        return list.size();
     }
 
     public static void main(String[] args) {
-        System.out.println("\n" + removeElement(new int[]{3,2,2,3}, 3));
-        System.out.println("\n" + removeElement(new int[]{0,1,2,2,3,0,4,2}, 2));
+        removeElement(new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2);
     }
 }

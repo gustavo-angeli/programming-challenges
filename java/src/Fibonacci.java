@@ -7,7 +7,7 @@ public class Fibonacci {
             n2 = n3;
             System.out.println(n3);
         }
-        return new long[] {n1, n2, n1 * n2 == prod ? 1 : 0};
+        return new long[]{n1, n2, n1 * n2 == prod ? 1 : 0};
     }
 
     public static void main(String[] args) {

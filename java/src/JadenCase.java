@@ -18,7 +18,7 @@ public class JadenCase {
                 charList.set(i, charList.get(i).toUpperCase());
             }
             if (charList.get(i).equals(" ")) {
-                charList.set(i + 1, charList.get(i + 1).toString().toUpperCase());
+                charList.set(i + 1, charList.get(i + 1).toUpperCase());
             }
 
             uppercasePhrase.append(charList.get(i));
@@ -26,7 +26,8 @@ public class JadenCase {
 
         return String.valueOf(uppercasePhrase);
     }
-    public static void main(String args[]) {
+
+    public static void main(String[] args) {
         String a = "aaaa aaaA aaa Aaaaa";
         System.out.println(toJadenCase(a));
     }

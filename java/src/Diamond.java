@@ -1,6 +1,6 @@
 public class Diamond {
 
-    public static String showDiamond (int size) {
+    public static String showDiamond(int size) {
         if (size <= 0 || size % 2 == 0) return null;
 
         StringBuilder sb = new StringBuilder();
@@ -28,7 +28,7 @@ public class Diamond {
                     sb.append(" ");
                 }
             }
-            for (int i = 0; i < size; i++){
+            for (int i = 0; i < size; i++) {
                 sb.append("*");
             }
             sb.append("\n");

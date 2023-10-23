@@ -1,5 +1,3 @@
-import java.util.regex.Pattern;
-
 public class Regex {
 
     public static boolean validatePin(String pin) {
@@ -11,7 +9,7 @@ public class Regex {
         return false;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(validatePin("1234"));
     }
 
