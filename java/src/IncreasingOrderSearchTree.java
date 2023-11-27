@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IncreasingOrderSearchTree {
-    public static void Inorder(TreeNode root, List<Integer> values) {
+    public static void inorder(TreeNode root, List<Integer> values) {
         if (root != null) {
-            Inorder(root.left, values);
+            inorder(root.left, values);
             values.add(root.val);
-            Inorder(root.right, values);
+            inorder(root.right, values);
         }
     }
     public TreeNode increasingBST(TreeNode root) {
         List<Integer> val = new ArrayList<>();
-        Inorder(root, val);
+        inorder(root, val);
         TreeNode node = new TreeNode(val.get(0));
         TreeNode temp = node;
         for (int i  = 1; i < val.size(); i++) {
